@@ -1,7 +1,7 @@
 package Restaurant;
 
 /**
- * 
+ * write the codes that handles customer bookings for a restaurant.
  * @author Q
  *
  */
