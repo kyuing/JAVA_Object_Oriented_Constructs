@@ -1,5 +1,10 @@
 package Restaurant;
 
+/**
+ * 
+ * @author Q
+ *
+ */
 public class Main {
 	
 	public Main() {
