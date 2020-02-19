@@ -40,10 +40,10 @@ public class Main {
 
 		System.out.println();
 		tables[0].hasBeenBooked(c01); //c01 books table 1 
-		tables[6].hasBeenBooked(c02); //c01 books table 7
-		tables[9].hasBeenBooked(c05); //c01 books table 10
+		tables[6].hasBeenBooked(c02); //c02 books table 7
+		tables[9].hasBeenBooked(c05); //c05 books table 10
 		
-		//now, print the latest changes(state)) of the tables
+		//now, print the latest changes(state) of the tables
 		for(int i=0; i<10; i++) {
 			System.out.println(tables[i]);
 
