@@ -6,8 +6,13 @@ import ie.cct.objectorientedconstructs.FeedFactoryInterface;
 import ie.cct.objectorientedconstructs.FeedInterface;
 
 // Modify this to match your package
-import ie.cct.objectorientedconstructs.s12345s1234.FeedFactory;
+import ie.cct.objectorientedconstructs.s2018316.FeedFactory;
 
+/**
+ * 
+ * @author 2018316 KyuTae Han
+ *
+ */
 public class FeedReader {
 	
 	public static void main(String[] args) throws IOException {
