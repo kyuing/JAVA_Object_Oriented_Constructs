@@ -5,7 +5,7 @@ import ie.cct.objectorientedconstructs.interfaces.HotelManagementSystemInterface
 import ie.cct.objectorientedconstructs.s1234567.HotelManagementSystem;
 
 public class SampleInteraction {
-	//test
+	//testtesttest
 //	HotelManagementSystemInterface hm;
 //	static HotelInterface h = new mespil();
 	
