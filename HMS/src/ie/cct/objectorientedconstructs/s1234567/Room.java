@@ -37,19 +37,25 @@ public class Room implements RoomInterface {
 		Arrays.fill(this.availability.get("April"), true);
 		
 		this.availability.put("May", new boolean[31]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("May"), true);
+		
 		this.availability.put("June", new boolean[30]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("June"), true);
+		
 		this.availability.put("August", new boolean[31]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("August"), true);
+		
 		this.availability.put("September", new boolean[30]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("September"), true);
+		
 		this.availability.put("October", new boolean[31]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("October"), true);
+		
 		this.availability.put("November", new boolean[30]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("November"), true);
+		
 		this.availability.put("December", new boolean[31]);
-		Arrays.fill(this.availability.get("April"), true);
+		Arrays.fill(this.availability.get("December"), true);
 		
 	}
 	
@@ -117,7 +123,7 @@ public class Room implements RoomInterface {
 	public boolean book(String month, int day) {
 
 
-		if(isAvailable(month, day) {
+		if(isAvailable(month, day)) {
 			this.availability.get(month)[day-1] = false;
 			return true;
 		}

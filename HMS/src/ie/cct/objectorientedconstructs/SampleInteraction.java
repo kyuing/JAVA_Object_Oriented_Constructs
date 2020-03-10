@@ -18,6 +18,8 @@ public class SampleInteraction {
 
 		HotelInterface h = hm.setupHotel("mespil.txt");
         // try some bookings
+		
+		h.checkAvailability("January", day, type, lengthOfStay)
 		h.bookRoom("January", 1, "Double", 5);
 		h.bookRoom("January", 1, "Double", 5);
 		h.bookRoom("January", 1, "Double", 5);

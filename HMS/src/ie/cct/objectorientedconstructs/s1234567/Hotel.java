@@ -10,6 +10,11 @@ public class Hotel implements HotelInterface {
 	private List<RoomInterface> rooms;
 	private String name;
 	
+	public Hotel(String name, List<RoomInterface> rooms) {
+		this.name = name;
+		this.rooms = rooms;
+	}
+	
 	@Override
 	public List<RoomInterface> getRooms() {
 		// TODO Auto-generated method stub
@@ -37,7 +42,22 @@ public class Hotel implements HotelInterface {
 
 	@Override
 	public boolean checkAvailability(String month, int day, String type, int lengthOfStay) {
-		// TODO Auto-generated method stub
+
+		for(RoomInterface room:rooms) {
+			if(room.getType().contentEquals(type)) {
+				
+				int finalday = day + lengthOfStay;
+				
+				do {
+					if(!room.isAvailable(month, day)) {
+						return false;
+					}
+					day++;
+					
+				}while(day <= finalday);
+				return true;
+			}
+		}
 		return false;
 	}
 

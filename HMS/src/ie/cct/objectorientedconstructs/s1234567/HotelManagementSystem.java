@@ -18,24 +18,20 @@ public class HotelManagementSystem implements HotelManagementSystemInterface {
 
 	String roomType;
 //	HotelInterface[] hotel = new HotelInterface[10];
-	Hotel mespil = new Hotel();
+	Hotel mespil;
 
 	List<RoomInterface> rooms = new ArrayList<RoomInterface>();
 	Room[] Single;
 	Room[] Double;
 	Room[] Penthouse;
 
-//	HotelInterface hotel;
-//	RoomInterface room;
+
 	String fileSetUp, name;
 
 	public HotelManagementSystem() {
 
 	}
 
-//	public HotelManagementSystem(HotelInterface hotel, RoomInterface room) {
-//
-//	}
 
 	@Override
 	public String getCalendar(String month, HotelInterface hotel) {
@@ -74,12 +70,14 @@ public class HotelManagementSystem implements HotelManagementSystemInterface {
 
 			Single = new Room[numOfRooms]; 
 			for(int i=0; i<Single.length; i++) { 
+				
+				
 				Single[i] = new Room(i+1); 
 				Single[i].setType(type); 
 				Single[i].setRate(rate);
 				rooms.add(Single[i]);
 				mespil.setRooms(rooms);
-//				Single[i].setAvailability(Single[i].getType(), ); }
+				//Single[i].setAvailability(Single[i].getType(), ); }
 			}
 			 
 			  
@@ -88,7 +86,7 @@ public class HotelManagementSystem implements HotelManagementSystemInterface {
 			  System.out.println(Single[i].getId() + ", " + 
 			  Single[i].getType() + ", " +
 			  Single[i].getRate());
-		  // Single[i].setAvailability(Single[i].getType(), );
+		      // Single[i].setAvailability(Single[i].getType(), );
 			  
 		  }
 //		  mespil.getRooms().forEach(System.out::println);
