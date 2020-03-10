@@ -11,6 +11,9 @@ import ie.cct.objectorientedconstructs.s2018316.FeedFactory;
 /**
  * 
  * @author 2018316 KyuTae Han
+ * 
+ * there are my files in my git
+ * git folder structure for this CA: JAVA_Object_Oriented_Constructs/Exercise/
  *
  */
 public class FeedReader {
